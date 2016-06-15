@@ -1,3 +1,3 @@
 # home
 
-bootstrap 4 homepage.
+bootstrap4 styled homepage.
