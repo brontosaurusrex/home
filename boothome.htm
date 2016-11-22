@@ -13,8 +13,9 @@ https://help.github.com/articles/creating-project-pages-manually/
 
 body {  text-align:center; } 
 
-.somemargins {  margin: 7%;    } 
-.VolumeSlider { width: 100%; padding-left: 25%; padding-right: 25%; margin-top: 0.2rem; }
+.someMargins {  margin: 7%; } 
+.sliderMargins {  margin-left: 25%; margin-right: 25% }
+.VolumeSlider { width: 100%; margin-top: 0.5rem; }
 
 <!--
 .centered {
@@ -44,7 +45,7 @@ body {  text-align:center; }
     
 
     
-    <div class="somemargins">
+    <div class="someMargins">
         
             <form class="form-group" action="https://google.com/search" method="get">               
             <input type="text" class="form-control form-control-lg" id="exampleInputName" placeholder="google" name="q" autofocus>
@@ -92,7 +93,9 @@ function setVolume(volume) {
 </script>
 
 <!-- slider -->
+<div class="sliderMargins">
 <input class="VolumeSlider" type="range" onchange="setVolume(this.value)" min="0" max="1" step="0.01" value="1">
+</div>
 <!-- slider end -->
 <!-- volume end -->
 
