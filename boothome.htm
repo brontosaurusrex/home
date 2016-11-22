@@ -31,13 +31,13 @@ body {  text-align:center; }
     
     } 
 
-audio { width: 150px; display: block; }
+
 
 </style>
 
 <title>boothome</title>
 <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css">
-<script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
+<!-- <script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script> -->
 
 </head>
 <body>
@@ -86,16 +86,35 @@ audio { width: 150px; display: block; }
             <a class="btn btn-info btn-lg"  href="https://github.com/brontosaurusrex/brontosaurusrex.github.io" role="button">blog</a>
             <a class="btn btn-info btn-lg"  href="https://github.com/brontosaurusrex/home/tree/gh-pages"        role="button">boothome</a>
 
-            
-    
+
+<!-- This is ugly stuff, it really should be just a single audio player tag and buttons should just switch src property -->
+<audio id="player1" src="http://ice1.somafm.com/dubstep-256-mp3"></audio>
+<div class="btn btn-secondary btn-lg" onclick="document.getElementById('player1').paused?document.getElementById('player1').play():document.getElementById('player1').pause()">dubstep</div>
+
+<audio id="player2" src="http://live-mp3-128.kexp.org:80/kexp128.mp3"></audio>
+<div class="btn btn-secondary btn-lg" onclick="document.getElementById('player2').paused?document.getElementById('player2').play():document.getElementById('player2').pause()">kexp</div>
+
+<audio id="player3" src="http://kruljo.radiostudent.si:8000/ehiq"></audio>
+<div class="btn btn-secondary btn-lg" onclick="document.getElementById('player3').paused?document.getElementById('player3').play():document.getElementById('player3').pause()">Student</div>
+
+
+<!--  🔊  -->
+
     </div>
     
 
-<audio controls="controls" src="http://ice1.somafm.com/dubstep-256-mp3"></audio><br>
-Soma dubstep stream
+ 
+
+
+
+
 
 </div>
 
+
+
+
+  
 
 </body>
 </html>
