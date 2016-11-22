@@ -13,6 +13,9 @@ https://help.github.com/articles/creating-project-pages-manually/
 
 body {  text-align:center; } 
 
+.somemargins {  margin: 7%;    } 
+.VolumeSlider { width: 100%; padding-left: 25%; padding-right: 25%; margin-top: 0.2rem; }
+
 <!--
 .centered {
         position: fixed;
@@ -22,16 +25,6 @@ body {  text-align:center; }
         width: 90%;
     }
 -->
-
-.somemargins
-{  
-    
-    margin: 7%;
-
-    
-    } 
-
-
 
 </style>
 
@@ -87,6 +80,22 @@ body {  text-align:center; }
             <a class="btn btn-info btn-lg"  href="https://github.com/brontosaurusrex/home/tree/gh-pages"        role="button">boothome</a>
 
 
+<!-- audio players -->
+
+<!-- volume -->
+<script>
+function setVolume(volume) {
+   player1.volume = volume;
+   player2.volume = volume;
+   player3.volume = volume;
+}
+</script>
+
+<!-- slider -->
+<input class="VolumeSlider" type="range" onchange="setVolume(this.value)" min="0" max="1" step="0.01" value="1">
+<!-- slider end -->
+<!-- volume end -->
+
 <!-- This is ugly stuff, it really should be just a single audio player tag and buttons should just switch src property < that way a simple +- volume buttons would also be easy -->
 <audio id="player1" src="http://ice1.somafm.com/dubstep-256-mp3"></audio>
 <div class="btn btn-secondary btn-lg" onclick="document.getElementById('player1').paused?document.getElementById('player1').play():document.getElementById('player1').pause()">dubstep</div>
@@ -97,15 +106,16 @@ body {  text-align:center; }
 <audio id="player3" src="http://kruljo.radiostudent.si:8000/ehiq"></audio>
 <div class="btn btn-secondary btn-lg" onclick="document.getElementById('player3').paused?document.getElementById('player3').play():document.getElementById('player3').pause()">Student</div>
 
+<!-- audio players end -->
 
-<!--  🔊  -->
+
+
+   
+
+
+
 
     </div>
-    
-
- 
-
-
 
 
 
