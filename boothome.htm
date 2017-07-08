@@ -11,42 +11,35 @@ https://help.github.com/articles/creating-project-pages-manually/
 {       margin-top: 0.2rem;
         margin-bottom: 0.2rem; }
 
-body {  text-align:center; } 
+body {  text-align:center; 
+        background-image: url("https://brontosaurusrex.github.io/public/mozillaGrain.png");
+        
+    } 
 
 .someMargins {  margin: 7%; } 
 .sliderMargins {  margin-left: 25%; margin-right: 25% }
 .VolumeSlider { width: 100%; margin-top: 0.5rem; }
 
-<!--
-.centered {
-        position: fixed;
-        top: 38%;
-        left: 50%;
-        transform: translate(-50%, -50%); 
-        width: 90%;
-    }
--->
+/* A simple way to override bootstrap is to use id, since it has higher css priority than class --> */
+#override {
+    background:transparent;
+}
 
 </style>
 
 <title>boothome</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-<!-- <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css"> -->
-<!-- <script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script> -->
 
 </head>
 <body>
 
-<!--
-<div class="centered">
--->
     
 <div>
     
     <div class="someMargins">
         
             <form class="form-group" action="https://google.com/search" method="get">               
-            <input type="text" class="form-control form-control-lg" id="exampleInputName" placeholder="google" name="q" autofocus>
+            <input type="text" class="form-control form-control-lg form-control-add" id="override" placeholder="google" name="q" autofocus>
             </form>
 
             <a class="btn btn-danger btn-lg"        href="https://mail.google.com"              role="button">  gmail  </a>
@@ -55,19 +48,19 @@ body {  text-align:center; }
             <a class="btn btn-info btn-lg"          href="https://transfer.sh"                  role="button">transfer</a>
             
             <a class="btn btn-success btn-lg"       href="http://brontosaurusrex.github.io"     role="button">brex</a>
-            <a class="btn btn-secondary btn-lg"     href="http://bunsenlabs.org"                role="button">bunsen</a>
+            <a id="override" class="btn btn-secondary btn-lg"     href="http://bunsenlabs.org"                role="button">bunsen</a>
  
             <a class="btn btn-danger btn-lg"        href="http://distrowatch.com/"              role="button">dwatch</a>
-            <a class="btn btn-secondary btn-lg"     href="https://www.reddit.com/r/unixporn/top/?sort=top&t=year"    role="button">unixporn</a>
+            <a id="override" class="btn btn-secondary btn-lg"     href="https://www.reddit.com/r/unixporn/top/?sort=top&t=year"    role="button">unixporn</a>
             <a class="btn btn-primary btn-lg"       href="https://hydrogenaud.io/"              role="button">hydrogen</a>
             <a class="btn btn-success btn-lg"       href="http://rss.slashdot.org/slashdot/slashdotMain?format=xml"                 role="button">slashdot xml</a>
             <a class="btn btn-warning btn-lg"       href="http://www.imdb.com/"                 role="button">imdb</a>
             <a class="btn btn-warning btn-lg"       href="https://www.blender.org/"             role="button">blender</a>
-            <a class="btn btn-secondary btn-lg"     href="https://www.sheepit-renderfarm.com"   role="button">sheepit</a>
+            <a id="override" class="btn btn-secondary btn-lg"     href="https://www.sheepit-renderfarm.com"   role="button">sheepit</a>
             
-            <a class="btn btn-secondary btn-lg"     href="http://mywiki.wooledge.org/BashFAQ"   role="button">bash faq</a>
-            <a class="btn btn-secondary btn-lg"     href="http://mywiki.wooledge.org/BashGuide" role="button">bash guide</a>
-            <a class="btn btn-secondary btn-lg"     href="http://www.shellcheck.net/"           role="button">shellcheck</a>
+            <a id="override" class="btn btn-secondary btn-lg"     href="http://mywiki.wooledge.org/BashFAQ"   role="button">bash faq</a>
+            <a id="override" class="btn btn-secondary btn-lg"     href="http://mywiki.wooledge.org/BashGuide" role="button">bash guide</a>
+            <a id="override" class="btn btn-secondary btn-lg"     href="http://www.shellcheck.net/"           role="button">shellcheck</a>
 
             <a class="btn btn-info btn-lg"  href="https://github.com/brontosaurusrex/postbang"                  role="button">postbang</a>
             <a class="btn btn-info btn-lg"  href="https://github.com/brontosaurusrex/singularity"               role="button">singularity</a>
@@ -94,10 +87,10 @@ body {  text-align:center; }
             
             <!-- This is ugly stuff, it really should be just a single audio player tag and buttons should just switch src property -->
             <audio id="player1" src="http://ice1.somafm.com/dubstep-256-mp3"></audio>
-            <div class="btn btn-secondary btn-lg" onclick="document.getElementById('player1').paused?document.getElementById('player1').play():document.getElementById('player1').pause()">dubstep</div>
+            <div id="override" class="btn btn-secondary btn-lg" onclick="document.getElementById('player1').paused?document.getElementById('player1').play():document.getElementById('player1').pause()">dubstep</div>
             
             <audio id="player2" src="http://live-mp3-128.kexp.org:80/kexp128.mp3"></audio>
-            <div class="btn btn-secondary btn-lg" onclick="document.getElementById('player2').paused?document.getElementById('player2').play():document.getElementById('player2').pause()">kexp</div>
+            <div id="override" class="btn btn-secondary btn-lg" onclick="document.getElementById('player2').paused?document.getElementById('player2').play():document.getElementById('player2').pause()">kexp</div>
             
 <!--        <audio id="player3" src="http://kruljo.radiostudent.si:8000/ehiq"></audio>
             <div class="btn btn-secondary btn-lg" onclick="document.getElementById('player3').paused?document.getElementById('player3').play():document.getElementById('player3').pause()">Student</div>
