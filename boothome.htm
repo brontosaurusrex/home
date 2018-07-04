@@ -48,7 +48,8 @@ body {  text-align:center;
             <a class="btn btn-primary btn-lg"        href="https://drive.google.com"             role="button">drive</a>
             <a class="btn btn-danger btn-lg"        href="https://www.youtube.com/"             role="button">youtube</a>
             <a class="btn btn-danger btn-lg"        href="https://hooktube.com/"             role="button">hooktube</a>
-            <!-- <a class="btn btn-primary btn-lg"       href="https://trello.com"                   role="button">trello</a> -->
+  
+            <a class="btn btn-info btn-lg"          href="https://trello.com"                  role="button">trello</a>
             <a class="btn btn-info btn-lg"          href="https://transfer.sh"                  role="button">transfer</a>
             
             <a class="btn btn-success btn-lg"       href="http://brontosaurusrex.github.io"     role="button">brex</a>
@@ -63,6 +64,7 @@ body {  text-align:center;
             <a class="btn btn-success btn-lg"       href="http://www.osnews.com/files/recent.xml" role="button">osnews rss</a>
             <a class="btn btn-warning btn-lg"       href="http://www.imdb.com/"                 role="button">imdb</a>
             <a class="btn btn-warning btn-lg"       href="https://www.blender.org/"             role="button">blender</a>
+            <a class="btn btn-warning btn-lg"       href="https://www.creativeshrimp.com/"      role="button">creativeshrimp</a>
             <a id="override" class="btn btn-secondary btn-lg"     href="https://www.sheepit-renderfarm.com"   role="button">sheepit</a>
             
             <a id="override" class="btn btn-secondary btn-lg"     href="http://mywiki.wooledge.org/BashFAQ"   role="button">bash faq</a>
@@ -74,35 +76,7 @@ body {  text-align:center;
             <a class="btn btn-info btn-lg"  href="https://github.com/brontosaurusrex/brontosaurusrex.github.io" role="button">blog</a>
             <a class="btn btn-info btn-lg"  href="https://github.com/brontosaurusrex/home/tree/gh-pages"        role="button">boothome</a>
 
-            <!-- audio players -->
-            
-            <!-- volume -->
-            <script>
-            function setVolume(volume) {
-               player1.volume = volume;
-               player2.volume = volume;
-               player3.volume = volume;
-            }
-            </script>
-            
-            <!-- slider -->
-            <div class="sliderMargins">
-            <input class="VolumeSlider" type="range" onchange="setVolume(this.value)" min="0" max="1" step="0.01" value="1">
-            </div>
-            <!-- slider end -->
-            <!-- volume end -->
-            
-            <!-- This is ugly stuff, it really should be just a single audio player tag and buttons should just switch src property -->
-            <audio id="player1" src="http://ice1.somafm.com/dubstep-256-mp3"></audio>
-            <div id="override" class="btn btn-secondary btn-lg" onclick="document.getElementById('player1').paused?document.getElementById('player1').play():document.getElementById('player1').pause()">dubstep</div>
-            
-            <audio id="player2" src="http://live-mp3-128.kexp.org:80/kexp128.mp3"></audio>
-            <div id="override" class="btn btn-secondary btn-lg" onclick="document.getElementById('player2').paused?document.getElementById('player2').play():document.getElementById('player2').pause()">kexp</div>
-            
-<!--        <audio id="player3" src="http://kruljo.radiostudent.si:8000/ehiq"></audio>
-            <div class="btn btn-secondary btn-lg" onclick="document.getElementById('player3').paused?document.getElementById('player3').play():document.getElementById('player3').pause()">Student</div>
--->            
-            <!-- audio players end -->
+
 
 
     </div>
