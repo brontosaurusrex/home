@@ -6,17 +6,22 @@ https://help.github.com/articles/creating-project-pages-manually/
 <html lang="en">
 <head>
     <meta charset="utf-8">
+
+
+<title>boothome</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
 <style>
-.btn
-{       margin-top: 0.2rem;
-        margin-bottom: 0.2rem; }
+.btn {  margin-top: 0.2rem;
+        margin-bottom: 0.2rem; 
+        opacity: 0.45;
+        }
+
+
 
 body {  text-align:center; 
-    
-        
         background-image: url("https://brontosaurusrex.github.io/public/mozillaGrain.png");
-        
-    } 
+        } 
 
 .someMargins {  margin: 7%; } 
 .sliderMargins {  margin-left: 25%; margin-right: 25% }
@@ -25,15 +30,16 @@ body {  text-align:center;
 /* A simple way to override bootstrap is to use id, since it has higher css priority than class --> */
 #override {
     background:transparent;
+    opacity: 0.5;
+    color: white;
+    
 }
 
 </style>
 
-<title>boothome</title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 
 </head>
-<body style="background-color: #eee;">
+<body style="background-color: #13181B;">
 
     
 <div>
@@ -53,10 +59,10 @@ body {  text-align:center;
             <a class="btn btn-info btn-lg"          href="https://transfer.sh"                  role="button">transfer</a>
             
             <a class="btn btn-success btn-lg"       href="http://brontosaurusrex.github.io"     role="button">brex</a>
-            <a id="override" class="btn btn-secondary btn-lg"     href="http://bunsenlabs.org"                role="button">bunsen</a>
+            <a class="btn btn-secondary btn-lg"     href="http://bunsenlabs.org"                role="button">bunsen</a>
  
             <a class="btn btn-danger btn-lg"        href="http://distrowatch.com/"              role="button">dwatch</a>
-            <a id="override" class="btn btn-secondary btn-lg"     href="https://www.reddit.com/r/unixporn/top/?sort=top&t=year"    role="button">unixporn</a>
+            <a class="btn btn-secondary btn-lg"     href="https://www.reddit.com/r/unixporn/top/?sort=top&t=year"    role="button">unixporn</a>
             <a class="btn btn-primary btn-lg"       href="https://hydrogenaud.io/"              role="button">hydrogen</a>
             <a class="btn btn-success btn-lg"       href="http://rss.slashdot.org/slashdot/slashdotMain?format=xml"                 role="button">slashdot rss</a>
             <a class="btn btn-success btn-lg"       href="https://www.phoronix.com" role="button">phoronix</a>
@@ -68,11 +74,11 @@ body {  text-align:center;
             <a class="btn btn-warning btn-lg"       href="http://www.imdb.com/"                 role="button">imdb</a>
             <a class="btn btn-warning btn-lg"       href="https://www.blender.org/"             role="button">blender</a>
             <a class="btn btn-warning btn-lg"       href="https://www.creativeshrimp.com/"      role="button">creativeshrimp</a>
-            <a id="override" class="btn btn-secondary btn-lg"     href="https://www.sheepit-renderfarm.com"   role="button">sheepit</a>
+            <a class="btn btn-secondary btn-lg"     href="https://www.sheepit-renderfarm.com"   role="button">sheepit</a>
             
-            <a id="override" class="btn btn-secondary btn-lg"     href="http://mywiki.wooledge.org/BashFAQ"   role="button">bash faq</a>
-            <a id="override" class="btn btn-secondary btn-lg"     href="http://mywiki.wooledge.org/BashGuide" role="button">bash guide</a>
-            <a id="override" class="btn btn-secondary btn-lg"     href="http://www.shellcheck.net/"           role="button">shellcheck</a>
+            <a class="btn btn-secondary btn-lg"     href="http://mywiki.wooledge.org/BashFAQ"   role="button">bash faq</a>
+            <a class="btn btn-secondary btn-lg"     href="http://mywiki.wooledge.org/BashGuide" role="button">bash guide</a>
+            <a class="btn btn-secondary btn-lg"     href="http://www.shellcheck.net/"           role="button">shellcheck</a>
 
             <a class="btn btn-info btn-lg"  href="https://github.com/brontosaurusrex/stretchbang"                  role="button">stretchbang</a>
             <a class="btn btn-info btn-lg"  href="https://github.com/brontosaurusrex/singularity"               role="button">singularity</a>
