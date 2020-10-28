@@ -11,25 +11,48 @@ https://help.github.com/articles/creating-project-pages-manually/
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Bootstrap CSS 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+
+	<!-- Bootstrap 5 CSS  -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+
+
 
 
 <title>boothome</title>
 
 <style>
-.btn {  margin-top: 0.2rem;
-        margin-bottom: 0.2rem; 
-        opacity: 0.45;
-        }
 
+.btn {  
+        margin-top: 0.5rem;
+        opacity: 0.45;
+
+        }
 
 
 body {  text-align:center; 
         background-image: url("https://brontosaurusrex.github.io/public/mozillaGrain.png");
         } 
 
-.someMargins {  margin: 7%; } 
+.contain {
+
+
+
+}
+
+.someMargins {  padding: 7%; 
+				
+				 }
+
+.form-group {
+
+	max-width: 66%;
+	text-align:center;
+	margin:auto;
+	padding: 1%;
+}
+
 .sliderMargins {  margin-left: 25%; margin-right: 25% }
 .VolumeSlider { width: 100%; margin-top: 0.5rem; }
 
@@ -50,12 +73,12 @@ body {  text-align:center;
 <body style="background-color: #13181B;">
     
 
-<div>
+<div class="contain">
     
     <div class="someMargins">
         
             <form class="form-group" action="https://google.com/search" method="get">               
-            <input type="text" class="form-control form-control-lg form-control-add" id="override" placeholder="google" name="q" autofocus>
+            <input type="text" class="form-control form-control-lg form-control-add" id="override" placeholder="google the world wide web" name="q" autofocus>
             </form>
 
             <a class="btn btn-danger btn-lg"        href="https://mail.google.com"              role="button">  gmail  </a>
@@ -96,7 +119,6 @@ body {  text-align:center;
             <a class="btn btn-dark btn-lg"       href="https://www.anandtech.com/"             role="button">anandtech</a>
             <a class="btn btn-dark btn-lg"       href="https://pcper.com/"             role="button">pcper</a>
             <a class="btn btn-dark btn-lg"       href="https://www.tomshardware.com/"  role="button">toms</a>
-
 
    </div>
 
