@@ -21,6 +21,9 @@ https://help.github.com/articles/creating-project-pages-manually/
     <!-- Bootstrap 4.5 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
+    <!-- keyboard -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-keyboard@latest/build/css/index.css">
+	<link rel="stylesheet" href="src/index.css">
 
 
 <title>boothome</title>
@@ -40,12 +43,11 @@ body {  text-align:center;
 
 .contain {
 
-
-
 }
 
-.someMargins {  padding: 7%; 
-				
+.someMargins {  padding: 2%; 
+padding-top: 1%;	
+padding-bottom: 1%;			
 				 }
 
 .form-group {
@@ -100,10 +102,6 @@ body {  text-align:center;
     
     <div class="someMargins">
         
-            <form class="form-group" action="https://google.com/search" method="get">               
-            <input type="text" class="form-control form-control-lg form-control-add" id="override" placeholder="google the world wide web" name="q" autofocus>
-            </form>
-
             <a class="btn btn-danger btn-lg"        href="https://mail.google.com"              role="button">  gmail  </a>
 
             <a class="btn btn-danger btn-lg"        href="https://www.youtube.com/"             role="button">youtube</a>
@@ -144,6 +142,15 @@ body {  text-align:center;
             <a class="btn btn-dark btn-lg"       href="https://www.tomshardware.com/"  role="button">toms</a>
             <a class="btn btn-info btn-lg"       href=""  role="button" id="time">00:00</a>
 
+
+            <form class="form-group" action="https://google.com/search" method="get">               
+                <input type="text" class="form-control form-control-lg form-control-add input" id="override" placeholder="google the world wide web" name="q" autofocus>
+                <input class="btn btn-info btn-lg" type="submit" value="Submit">
+                </form>
+    
+                <!-- keyboard -->
+                <div class="simple-keyboard"></div>
+
    </div>
 
 
@@ -153,6 +160,8 @@ body {  text-align:center;
 
 </div>
 
-
+<!-- keyboard js -->
+<script src="https://cdn.jsdelivr.net/npm/simple-keyboard@latest/build/index.js"></script>
+<script src="src/index.js"></script>
 </body>
 </html>
